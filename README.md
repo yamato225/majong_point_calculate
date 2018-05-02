@@ -1,5 +1,22 @@
 # majong_point_calculate
 
-## what is this?
+## これは何？
 
-Python programs for calculating points of Japanese majong.
+麻雀の点数計算をするpythonクラス（を目指して作っているもの）です。
+
+## 使い方
+
+それぞれの牌には以下のように数値を割り当てています。
+* マンズ:1〜9
+* ピンズ:11~19
+* ソーズ:21~29
+* 東南西北:31,32,33,34
+* 白發中:41,42,43
+
+手牌を数値型の配列としてセットすることで、国士無双を判定出来ます。
+
+```python
+mycalc = MajongPointCalculate([1,9,11,19,21,29,31,32,33,34,41,42,43],1)
+print(mycalc.isKokushiMusou)
+# True
+```
