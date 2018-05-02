@@ -1,0 +1,1 @@
+# majong_point_calculate
